@@ -4,13 +4,12 @@
   "version": "0.1.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "tsc -b && vite build",
-    "test": "vitest run",
+    "dev": "node init && vite",
+    "build": "node init && tsc -b && vite build",
+    "test": "vitest run --coverage",
     "test:coverage": "vitest run --coverage",
     "lint": "eslint .",
     "preview": "vite preview",
-    "test": "vitest run --coverage",
     "test:watch": "vitest"
   },
   "dependencies": {
